@@ -120,9 +120,10 @@ starfield *:not(#easter-eggs) {
   height: 228px;
   background: white;
   transition: transform 0.3s;
-  border: slateblue 1px solid;
+  border: black 1px solid;
   cursor: pointer;
   margin: 25px auto;
+  padding: 0;
 }
 
 .project:hover {
@@ -135,13 +136,22 @@ starfield *:not(#easter-eggs) {
   max-height: 200px;
 }
 
+.project > img.filled {
+  margin: auto;
+  width: 228px;
+  height: 228px;
+  max-width: 228px;
+  max-height: 228px;
+}
+
 .modal-body > img {
   display: block;
   padding-bottom: 2em;
   margin: 0 auto;
+  max-width: 95%;
 }
 
-.realtime-users {
+.realtime-stats {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
