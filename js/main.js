@@ -44,4 +44,6 @@
 			document.getElementById('sga').innerHTML = !flag ? "*:not(i) { font-family: 'SGARounded', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }" : "";
 		}
 	});
+
+	$('[data-toggle="tooltip"]').tooltip();
 })(jQuery);

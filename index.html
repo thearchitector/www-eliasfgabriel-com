@@ -82,7 +82,13 @@
 
 					<div class="col-lg-3 col-md-6 text-center">
 						<button type="button" class="project" data-toggle="modal" data-target="#sheepnstuff">
-							<img class="filled" src="images/sns_icon.png" alt="Sheep n Stuff">
+							<img src="images/sns_icon.svg" alt="Sheep n Stuff">
+						</button>
+					</div>
+
+					<div class="col-lg-3 col-md-6 text-center">
+						<button type="button" class="project" data-toggle="modal" data-target="#ecosiaidle">
+							<img src="images/ecosiaidle.svg" alt="Ecosia Idle">
 						</button>
 					</div>
 				</div>
@@ -136,6 +142,31 @@
 					</div>
 				</div>
 			</div>
+
+			<div id="ecosiaidle" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="Ecosia Idle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Ecosia Idle</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						
+						<div class="modal-body">
+							<img src="images/ecosiaidle.svg" alt="Sheep n Stuff">
+							<p class="mb-3">Ecosia Idle is a Chome extension that searches on <a target="_blank" href="https://www.ecosia.org/">Ecosia</a> while you search on other sites like Google. The eco-friendly principle behind Ecosia is fantastic, but the search results are powered by Bing. To maintain the search diversity Google provides <strong class="font-italic">while</strong> continuing to plant trees, Ecosia Idle uses Ecosia behind the scenes every time you search for something.</p>
+							<a class="font-weight-bold text-nowrap" target="_blank" href="http://zipteria.com/BiVj">Download</a>
+							<a data-toggle="tooltip" title="Direct Download" target="_blank" href="http://bit.ly/2GZCAWf"><i class="fas fa-download"></i></a>
+						</div>
+
+						<div class="modal-footer position-relative">
+							<p class="realtime-stats" aria-labelledby="ei">Ecosia and all its assets are still property of <a target="_blank" href="https://info.ecosia.org/about">Ecosia GmbH</a>.</p>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<section id="contact">
@@ -178,7 +209,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
+		<script>(function(w,d,s,g,js,fjs){g=w.gapi||(w.gapi={});g.analytics={q:[],ready:function(cb){this.q.push(cb)}};js=d.createElement(s);fjs=d.getElementsByTagName(s)[0];js.src='https://apis.google.com/js/platform.js';fjs.parentNode.insertBefore(js,fjs);js.onload=function(){g.load('analytics')};}(window,document,'script'));</script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

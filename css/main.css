@@ -120,10 +120,15 @@ starfield *:not(#easter-eggs) {
   height: 228px;
   background: white;
   transition: transform 0.3s;
-  border: black 1px solid;
+  outline: solid;
   cursor: pointer;
   margin: 25px auto;
   padding: 0;
+  border: none;
+}
+
+.project[data-target="#sheepnstuff"] {
+  background-color: #353435;
 }
 
 .project:hover {
@@ -149,6 +154,15 @@ starfield *:not(#easter-eggs) {
   padding-bottom: 2em;
   margin: 0 auto;
   max-width: 95%;
+  max-height: 220px;
+}
+
+.fas.fa-download {
+  cursor: pointer;
+}
+
+a[href="http://bit.ly/2GZCAWf"], a[href="http://bit.ly/2GZCAWf"]:hover, a[href="http://bit.ly/2GZCAWf"]:visited {
+  color: inherit;
 }
 
 .realtime-stats {
