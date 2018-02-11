@@ -41,7 +41,7 @@
 		
 		if(flag || prevClass === "fas fa-globe")
 		{
-			document.getElementById('sga').innerHTML = !flag ? "*:not(i) { font-family: 'SGARounded', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }" : "";
+			document.getElementById('sga').innerHTML = !flag ? ":not(i){font-family:SGARounded,'Helvetica Neue',Helvetica,Arial,sans-serif!important}#hello::before{animation:unset;-webkit-animation:unset;will-change:unset}" : "";
 		}
 	});
 

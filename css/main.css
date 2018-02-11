@@ -3,7 +3,7 @@
 header {
   position: relative;
   padding: 154px 0 100px;
-  background: radial-gradient(ellipse at center, #121421 0%, black 100%);
+  background: radial-gradient(ellipse at center, #0F111B 0%, black 100%);
   overflow: hidden;
 }
 
@@ -125,6 +125,11 @@ starfield *:not(#easter-eggs) {
   margin: 25px auto;
   padding: 0;
   border: none;
+}
+
+.project:focus {
+  outline: solid;
+  outline-color: black;
 }
 
 .project[data-target="#sheepnstuff"] {
