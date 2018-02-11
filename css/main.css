@@ -4,6 +4,9 @@ header {
   position: relative;
   padding: 154px 0 100px;
   background: radial-gradient(ellipse at center, #0F111B 0%, black 100%);
+  background: -webkit-radial-gradient(ellipse at center, #0F111B 0%, black 100%);
+  background: -moz-radial-gradient(ellipse at center, #0F111B 0%, black 100%);
+  background: -o-radial-gradient(ellipse at center, #0F111B 0%, black 100%);
   overflow: hidden;
 }
 
