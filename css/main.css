@@ -157,6 +157,15 @@ starfield *:not(#easter-eggs) {
   max-height: 220px;
 }
 
+img:not([src]) {
+  visibility: hidden;
+}
+
+img["data-src"], img["data-srcset"] {
+  display: block;
+  min-height: 1px;
+}
+
 .fas.fa-download {
   cursor: pointer;
 }
