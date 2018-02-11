@@ -221,15 +221,14 @@ a[href="http://bit.ly/2GZCAWf"], a[href="http://bit.ly/2GZCAWf"]:hover, a[href="
 
 @keyframes fade-hello{0%{opacity:1}100%{opacity:0}}@keyframes scroll-hello{0%,100%{content:'Hello!!'}2%{content:'مرحبا!!'}4%{content:'Salam!!'}6%{content:'Здравейте!!'}8%{content:'হ্যালো!!'}10%{content:'Zdravo!!'}12%{content:'Ahoj!!'}14%{content:'Hej!!'}16%{content:'Hallo!!'}18%{content:'Χαίρετε!!'}20%{content:'¡¡Hola!!'}22%{content:'Tere!!'}24%{content:'سلام!!'}26%{content:'Hei!!'}28%{content:'Bonjour!!'}30%{content:'Ola!'}32%{content:'नमस्ते!!'}34%{content:'Sawubona!!'}36%{content:'Բարեւ!!'}38%{content:'Halo!!'}40%{content:'Nnọọ!!'}42%{content:'Halló!!'}44%{content:'Ciao!!'}46%{content:'שלום!!'}48%{content:'こんにちは!!'}50%{content:'안녕하세요!!'}52%{content:'Sveiki!!'}54%{content:'Salama!!'}56%{content:'Здраво!!'}58%{content:'ഹലോ!!'}60%{content:'Bongu!!'}62%{content:'ဟလို!!'}64%{content:'Moni!!'}66%{content:'Cześć!!'}68%{content:'Olá!!'}70%{content:'Buna!!'}72%{content:'Здравствуйте!!'}74%{content:'හෙලෝ!!'}76%{content:'Përshëndetje!!'}78%{content:'Lumela!!'}80%{content:'Hallå!!'}82%{content:'வணக்கம்!!'}84%{content:'హలో!!'}86%{content:'Салом!!'}88%{content:'สวัสดี!!'}90%{content:'Kamusta!!'}92%{content:'Merhaba!!'}94%{content:'ہیلو!!'}96%{content:'Salom!!'}98%{content:'你好!!'}}@-webkit-keyframes fade-hello{0%{opacity:1}100%{opacity:0}}@-webkit-keyframes scroll-hello{0%,100%{content:'Hello!!'}2%{content:'مرحبا!!'}4%{content:'Salam!!'}6%{content:'Здравейте!!'}8%{content:'হ্যালো!!'}10%{content:'Zdravo!!'}12%{content:'Ahoj!!'}14%{content:'Hej!!'}16%{content:'Hallo!!'}18%{content:'Χαίρετε!!'}20%{content:'¡¡Hola!!'}22%{content:'Tere!!'}24%{content:'سلام!!'}26%{content:'Hei!!'}28%{content:'Bonjour!!'}30%{content:'Ola!'}32%{content:'नमस्ते!!'}34%{content:'Sawubona!!'}36%{content:'Բարեւ!!'}38%{content:'Halo!!'}40%{content:'Nnọọ!!'}42%{content:'Halló!!'}44%{content:'Ciao!!'}46%{content:'שלום!!'}48%{content:'こんにちは!!'}50%{content:'안녕하세요!!'}52%{content:'Sveiki!!'}54%{content:'Salama!!'}56%{content:'Здраво!!'}58%{content:'ഹലോ!!'}60%{content:'Bongu!!'}62%{content:'ဟလို!!'}64%{content:'Moni!!'}66%{content:'Cześć!!'}68%{content:'Olá!!'}70%{content:'Buna!!'}72%{content:'Здравствуйте!!'}74%{content:'හෙලෝ!!'}76%{content:'Përshëndetje!!'}78%{content:'Lumela!!'}80%{content:'Hallå!!'}82%{content:'வணக்கம்!!'}84%{content:'హలో!!'}86%{content:'Салом!!'}88%{content:'สวัสดี!!'}90%{content:'Kamusta!!'}92%{content:'Merhaba!!'}94%{content:'ہیلو!!'}96%{content:'Salom!!'}98%{content:'你好!!'}}@keyframes move-stars{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,-2000px,0)}}@-webkit-keyframes move-stars{from{transform:translate3d(0,0,0)}to{transform:translate3d(0,-2000px,0)}}
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   header {
     padding: 156px 0 100px;
   }
 }
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .fa-hand-spock {
-    margin-bottom: 55px;
-    padding-bottom: 15px;
+    margin-bottom: 70px !important;
   }
 }
