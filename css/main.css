@@ -34,7 +34,7 @@ a:hover {
 
 .dictionary {
   width: fit-content;
-  text-align: justify;
+  text-align: left;
 }
 
 .bg-darker {
