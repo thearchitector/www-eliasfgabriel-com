@@ -29,6 +29,38 @@
 		offset: 54
 	});
 
+	var specs = [20, 13, 8],
+		starfield = $("starfield"),
+		stars = [[], [], []],
+		height = starfield.height();
+
+	for(var i = 1; i <= 3; i++)
+	{
+		var positions = new Uint16Array(specs[i - 1]);
+		window.crypto.getRandomValues(positions);
+
+		for(var j = 0; j < specs[i - 1]; j++)
+		{
+			var star = document.createElement("star"),
+				star2 = document.createElement("star"),
+				x = (positions[j] * 2000) / 65536.0,
+				y = Math.random() * height;
+
+			star.style.width = star.style.height = star2.style.width = star2.style.height = i + "px";
+			star.style.transform = "translate(" + x + "px, " + y + "px)";
+			star2.style.transform = "translate(" + x + "px, " + (y + height) + "px)";
+			stars[i - 1].push(star);
+			stars[i - 1].push(star2);
+			starfield.append(star);
+			starfield.append(star2);
+		}
+	}
+
+	var params = { onComplete: function(self) { self.restart(); }, onCompleteParams: ["{self}"], y: "+="+(-height), ease: Power0.easeNone },
+		starBGAnim = TweenLite.to(stars[0], 15, params),
+		starMGAnim = TweenLite.to(stars[1], 35, Object.assign({}, params)),
+		starFGAnim = TweenLite.to(stars[2], 55, Object.assign({}, params));
+
 	$('#easter-eggs > i').click(function()
 	{
 		var $this = $(this),
