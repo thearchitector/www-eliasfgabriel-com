@@ -15,7 +15,9 @@ section {
 }
 
 #about > .container > .row div:nth-child(1) {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-hand-spock {
