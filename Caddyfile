@@ -1,0 +1,10 @@
+eliasfgabriel.com {
+	redir https://www.eliasfgabriel.com{uri}
+}
+
+www.eliasfgabriel.com {
+    header / Strict-Transport-Security "max-age=63072000"
+
+    root public
+    file_server
+}
