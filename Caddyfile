@@ -1,10 +1,25 @@
 eliasfgabriel.com {
-        redir https://www.eliasfgabriel.com{uri}
+	redir https://www.eliasfgabriel.com{uri}
 }
 
 www.eliasfgabriel.com {
-        header / Strict-Transport-Security "max-age=63072000"
+    header / Strict-Transport-Security "max-age=63072000; includeSubDomains"
+    header / Content-Security-Policy "frame-ancestors 'none'"
+    header / X-Frame-Options "DENY"
+    header / X-Content-Type-Options "nosniff"
+    header / X-XSS-Protection "1; mode=block"
+    header / Referrer-Policy "no-referrer"
 
-        root public
-        file_server
+    root public
+    file_server
+
+    handle_errors {
+        @404 {
+            expression {http.error.status_code} == 404
+        }
+        handle @404 {
+            rewrite * /404.html
+            file_server
+        }
+    }
 }
