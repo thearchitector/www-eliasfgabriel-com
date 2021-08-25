@@ -10,7 +10,7 @@ www.eliasfgabriel.com {
     header / X-XSS-Protection "1; mode=block"
     header / Referrer-Policy "no-referrer"
 
-    root public
+    root * /etc/caddy/www-eliasfgabriel-com/public
     file_server
 
     handle_errors {
@@ -18,7 +18,7 @@ www.eliasfgabriel.com {
             expression {http.error.status_code} == 404
         }
         handle @404 {
-            rewrite * 404.html
+            rewrite * /404.html
             file_server
         }
     }
