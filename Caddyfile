@@ -18,7 +18,7 @@ www.eliasfgabriel.com {
             expression {http.error.status_code} == 404
         }
         handle @404 {
-            rewrite * /404.html
+            rewrite * 404.html
             file_server
         }
     }
