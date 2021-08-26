@@ -6,7 +6,7 @@ www.eliasfgabriel.com {
     header {
         Permissions-Policy "interest-cohort=()"
         Referrer-Policy no-referrer
-        Strict-Transport-Security "max-age=63072000; includeSubDomains"
+        Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
         Content-Security-Policy "default-src 'none'; style-src 'self'; img-src 'self' https:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"
         X-Frame-Options DENY
         X-Content-Type-Options nosniff
