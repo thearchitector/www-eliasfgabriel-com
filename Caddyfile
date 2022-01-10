@@ -1,5 +1,5 @@
 eliasfgabriel.com {
-    Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    header Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 
 	redir https://www.eliasfgabriel.com{uri} permanent
 }
