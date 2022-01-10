@@ -1,5 +1,7 @@
 eliasfgabriel.com {
-	redir https://www.eliasfgabriel.com{uri}
+    Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+
+	redir https://www.eliasfgabriel.com{uri} permanent
 }
 
 www.eliasfgabriel.com {
