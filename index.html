@@ -16,6 +16,7 @@
     <link rel="mask-icon" href="images/logo.png" color="green" />
     <link rel="icon" href="images/logo.png" type="image/png" />
 
+    <link rel="stylesheet" href="vendor/normalize.css" type="text/css" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
   </head>
 
@@ -26,16 +27,16 @@
 
       <p>This is my idioverse!<sup>1</sup></p>
       <p>
-        I'm a professional Software Engineer. Aside from tinkering with technology, I
-        love to cook, garden, explore the world. I try to be creative when doing those
-        things, be it going to non-touristy areas, supporting local businesses, or
-        thinking about technology and its applications in new and interesting ways.
+        I'm a professional Engineer. Aside from tinkering with technology, I love to
+        cook, garden, and explore. I try to be creative when doing those things, be it
+        going into nature, supporting local businesses, or thinking about technology and
+        its applications in new and interesting ways.
       </p>
       <p>
         Encapsulating all those passions is my strong belief in teamwork, collaboration,
         and personal learning; I really think that the most effective connections and
-        answers to problems come out of listening to others and working together to
-        co-design and co-create meaning.
+        answers to problems come out of listening and working together to co-design and
+        co-create systems with meaning.
       </p>
     </section>
 
@@ -82,11 +83,6 @@
           />
           <p>scenyc, inc.</p>
         </a>
-
-        <a target="_blank" href="https://github.com/lemoment">
-          <img src="images/lemoment.png" alt="Le Moment - temporal apps" />
-          <p>Le Moment</p>
-        </a>
       </div>
     </section>
 
@@ -103,27 +99,7 @@
             <li>
               Virga is a Dockerized template application generator for creating solid
               yet extensible sidecar applications to the Indico IPA platform. It's built
-              on FastAPI (and some Tornado), GraphQL, Poetry, Docker Compose, and Caddy
-              2.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <u>just-jobs</u> &mdash;
-          <a target="_blank" href="https://justjobs.thearchitector.dev/"
-            >https://justjobs.thearchitector.dev/</a
-          >
-          <ul>
-            <li>
-              A lightweight asynchronous Python job executor. Using Redis by default
-              (but not exclusively, via custom adapters), it is a smaller and
-              production-ready alternative to Celery for applications where distributed
-              microservices are overkill.
-              <a
-                target="_blank"
-                href="https://thearchitector.github.io/just-jobs/just_jobs/"
-                >[source]</a
-              >
+              on FastAPI, GraphQL, Poetry, Docker, Helm, and Caddy.
             </li>
           </ul>
         </li>
@@ -144,14 +120,50 @@
           </ul>
         </li>
         <li>
-          <u>GiantURL</u> &mdash;
-          <a target="_blank" href="https://gianturl.net/">https://gianturl.net/</a>
+          <u>starlette-securecookies</u> &mdash;
+          <a target="_blank" href="https://securecookies.thearchitector.dev"
+            >https://securecookies.thearchitector.dev</a
+          >
           <ul>
             <li>
-              GiantURL is a general-purpose URL enlarger, designed to lengthen your
-              pesky small URLs securely, uniquely, and forever. It is publicly available
-              through both its web application and rate-limited API.
-              <a target="_blank" href="https://github.com/thearchitector/gianturl-net"
+              A Python package for customizable middleware that adds automatic cookie
+              encryption and decryption to Starlette and Starlette-based applications.
+              <a
+                target="_blank"
+                href="https://github.com/thearchitector/starlette-securecookies"
+                >[source]</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>just-jobs</u> &mdash;
+          <a target="_blank" href="https://justjobs.thearchitector.dev/"
+            >https://justjobs.thearchitector.dev/</a
+          >
+          <ul>
+            <li>
+              A friendly and lightweight wrapper for
+              <a target="_blank" href="https://arq-docs.helpmanual.io/#">arq</a>.
+              just-jobs provides a simple interface on top of arq that implements
+              additional functionality like synchronous job types (IO-bound vs.
+              CPU-bound) and signed and secure task serialization.
+              <a target="_blank" href="https://github.com/thearchitector/just-jobs"
+                >[source]</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <u>styled-prose</u> &mdash;
+          <a target="_blank" href="https://styledprose.thearchitector.dev/"
+            >https://styledprose.thearchitector.dev/</a
+          >
+          <ul>
+            <li>
+              A Python package for generating images and thumbnails based on bitmap
+              transformations of rendered prose.
+              <a target="_blank" href="https://github.com/thearchitector/styled-prose"
                 >[source]
               </a>
             </li>
@@ -173,9 +185,28 @@
       </ul>
     </section>
 
+    <section id="applications">
+      <h3>From time to time, I also create lucrative web applications:</h3>
+      <a target="_blank" href="https://gianturl.net/">
+        <p><small>https://gianturl.net</small></p>
+        <p><b>GiantURL.net &mdash; enlarge that short url into a giant url.</b></p>
+      </a>
+
+      <a target="_blank" href="https://parley.thearchitector.dev/">
+        <p><small>https://parley.thearchitector.dev/</small></p>
+        <p><b>Parley &mdash; No-frills peer-to-peer web conferencing.</b></p>
+      </a>
+
+      <a target="_blank" href="http://givemeaprivatekey.com/">
+        <p><small>http://givemeaprivatekey.com/</small></p>
+        <p>
+          <b>Give Me A Private Key &mdash; Hassle-free key pairs NOW.</b>
+        </p>
+      </a>
+    </section>
+
     <section id="footer">
-      <br /><br />
-      <hr />
+      <hr size="1" />
 
       <p>
         <a target="_blank" href="mailto:me@eliasfgabriel.com">EMAIL</a> (<a
